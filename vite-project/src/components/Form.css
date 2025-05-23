@@ -1,0 +1,33 @@
+/* Custom radio button styles */
+.form-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 2px solid #9333ea; /* purple-600 */
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.form-radio:checked {
+  background-color: #9333ea; /* purple-600 */
+  position: relative;
+}
+
+.form-radio:checked:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/* Purple focus rings */
+input:focus, .form-radio:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(147, 51, 234, 0.3); /* purple-600 with opacity */
+}
