@@ -51,7 +51,6 @@ const Signup = () => {
             <FiUser className="ml-2 h-6 w-6" />
           </div>
         </div>
-
         <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8 flex flex-col relative overflow-hidden">
           {/* Decorative elements */}
           <div className="absolute w-40 h-40 bg-purple-100 rounded-full -top-20 -right-20 opacity-50"></div>
@@ -264,10 +263,12 @@ const Signup = () => {
               </Link>
             </p>
           </div>
-        </div>
+        </div>{" "}
       </div>
 
-      <Footer />
+      <div className="w-full mt-8">
+        <Footer />
+      </div>
     </div>
   );
 };
